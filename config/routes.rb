@@ -11,6 +11,11 @@ Depot::Application.routes.draw do
 
   resources :carts
 
+  get 'upload/get' => 'upload#get'
+  post 'upload/save' => 'upload#save'
+  get 'upload/:id' => 'upload#show'
+  get 'upload/picture/:id' => 'upload#picture'
+
   get "store/index"
   resources :products
 

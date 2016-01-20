@@ -1,0 +1,1 @@
+ rails generate migration create_pictures comment:string name:string content_type:string data:binary
